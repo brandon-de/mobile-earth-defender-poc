@@ -5,7 +5,7 @@ using UnityEngine;
 public class RotatableObject : MonoBehaviour {
 
     public float startTimeBtwnShots;
-    private float timeBtwnShots;
+    private float timeBtwnShots = 0f;
     public Bullet bullet = null;
     public Transform TouchArea = null;
     public GameObject debugPrefab = null;
