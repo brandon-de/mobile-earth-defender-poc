@@ -30,4 +30,9 @@ public class Bullet : MonoBehaviour {
     {
         Destroy(gameObject);
     }
+
+    void OnTriggerEnter2D(Collider2D otherCollider2D)
+    {
+        DestroyBullet();
+    }
 }

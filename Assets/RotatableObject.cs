@@ -8,7 +8,6 @@ public class RotatableObject : MonoBehaviour {
     private float timeBtwnShots = 0f;
     public Bullet bullet = null;
     public Transform TouchArea = null;
-    public GameObject debugPrefab = null;
     public Transform ShotPoint = null;
     public Transform ShotDirection = null;
     private GameObject pDebugPrefab1;

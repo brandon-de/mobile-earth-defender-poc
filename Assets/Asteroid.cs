@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
-    public float Speed = -5;
-    public int Health = 23;
+    public float Speed = .3f;
+    public int Health = 3;
     private bool _isFlashFromHit = false;
     private float _isFlashFromHitTimer = .2f;
     private float _isFlashFromHitCurrentTimer = 0f;    
@@ -16,7 +16,7 @@ public class Asteroid : MonoBehaviour
 	    var r2d = GetComponent<Rigidbody2D>();
 
 	    // Add a vertical speed to the enemy
-	    //r2d.velocity = new Vector3(r2d.velocity.x, Speed);
+	    r2d.velocity = new Vector3(r2d.velocity.x, Speed);
 
 	    // Make the enemy rotate on itself
 	    //r2d.angularVelocity = Random.Range(-200, 200);
